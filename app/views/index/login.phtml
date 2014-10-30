@@ -1,0 +1,37 @@
+{% extends "skeleton.phtml" %}
+
+{% block head %}
+<link rel="stylesheet" href="css/login.css">
+{% endblock %}
+
+{% block title %}Login{% endblock %}
+
+{% block content %}
+<h1>Login</h1>
+{{ form('index/login', 'method': 'post') }}
+<div class="row">
+    <div class="col label">
+        <label for="username">Username</label>
+    </div>
+    <div class="col input">
+        {{ text_field("username", "size":32) }}
+    </div>
+</div>
+<div class="row">
+    <div class="col label">
+        <label for="password">Password</label>
+    </div>
+    <div class="col input">
+        {{ password_field("password", "size":32) }}
+    </div>
+</div>
+<div class="row">
+    <div class="col submit align-right">
+    {{ submit_button('Login') }}
+    </div>
+</div>
+</form>
+{% endblock %}
+
+{% block script %}
+{% endblock %}

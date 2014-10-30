@@ -1,0 +1,62 @@
+{% extends "skeleton.phtml" %}
+
+{# Codes in this section will be put between <head></head> tags. #}
+{% block head %}
+<link rel="stylesheet" href="css/customer.css">
+<script src="js/customer.js"></script>
+{% endblock %}
+
+{# Part of title. Final title will be "CMS | {partOfTitle}" #}
+{% block title %}Customer | list{% endblock %}
+
+{# The main content except head tabs. #}
+{% block content %}
+<h1>Customers List</h1>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>No</th>
+            <th>WX Name</th>
+            <th>WX Id</th>
+            <th>Name</th>
+            <th>Tel.1</th>
+            <th>Tel.2</th>
+            <th>Addr.1</th>
+            <th>Addr.2</th>
+            <th>Level</th>
+            <th>Child</th>
+            <th>Sex</th>
+            <th>Birth</th>
+            <th>Detail</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    </tbody>
+        {% for item in items %}
+        <tr id="{{item.id}}">
+            <td>{{loop.index}}</td>
+            <td>{{item.wxname}}</td>
+            <td>{{item.wxid}}</td>
+            <td>{{item.name}}</td>
+            <td>{{item.tel1}}</td>
+            <td>{{item.tel2}}</td>
+            <td>{{item.addr1}}</td>
+            <td>{{item.addr2}}</td>
+            <td>{{item.level}}</td>
+            <td>{{item.child}}</td>
+            <td>{{item.sex}}</td>
+            <td>{{item.birth}}</td>
+            <td>{{item.detail}}</td>
+            <td>
+                <button id="delete" type="button" class="btn btn-default"><span class="glyphicon glyphicon-trash"></span></button>
+                <button id="edit" type="button" class="btn btn-default"><span class="glyphicon glyphicon-pencil"></span></button>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
+
+{# Codes in tdis section will be put after body content. #}
+{% block script %}
+{% endblock %}

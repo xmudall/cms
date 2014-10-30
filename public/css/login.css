@@ -1,0 +1,20 @@
+h1,
+form {
+    margin: 40px auto 0 auto;
+    width: 400px;
+}
+form .row {
+    margin: 10px 0;
+    height: 35px;
+}
+.label {
+    width: 30%;
+}
+.input {
+    width: 70%;
+}
+.input input {
+    width: 100%;
+}
+.submit {
+}

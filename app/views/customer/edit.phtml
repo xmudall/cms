@@ -1,0 +1,38 @@
+{% extends "skeleton.phtml" %}
+
+{% block head %}
+<link rel="stylesheet" href="css/customer.css">
+{% endblock %}
+
+{% block title %}Customer | edit{% endblock %}
+
+{% block content %}
+<h1>Edit Customer</h1>
+{% set postUrl = 'customer/edit/' + obj.id %}
+{{ form(postUrl, 'method': 'post') }}
+<div class="row">
+    <div class="col label">
+        <label for="username">Username</label>
+    </div>
+    <div class="col input">
+        {{ text_field("username", "size":32) }}
+    </div>
+</div>
+<div class="row">
+    <div class="col label">
+        <label for="password">Password</label>
+    </div>
+    <div class="col input">
+        {{ password_field("password", "size":32) }}
+    </div>
+</div>
+<div class="row">
+    <div class="col submit align-right">
+    {{ submit_button('Login') }}
+    </div>
+</div>
+</form>
+{% endblock %}
+
+{% block script %}
+{% endblock %}

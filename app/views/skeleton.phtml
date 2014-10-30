@@ -13,14 +13,16 @@
         <title>CMS | {% block title %}{% endblock %}</title>
     </head>
     <body>
-        <div class="content-area">
+        <div class="content-area container">
             <div class="root-header row">
-                <div class="navbar col">
+                <div class="navbar col-xs-8">
+                    <div class="row">
                     {% for item in menu %}
-                    <div class="col nav-item"><a href="{{item.href}}">{{item.name}}</a></div>
+                    <div class="col-xs-1 nav-item"><a href="{{item.href}}">{{item.name}}</a></div>
                     {% endfor %}
+                    </div>
                 </div>
-                <div class="profile col">
+                <div class="profile col-xs-4">
                     {% if user is empty %}
                     <a href="index/login">Log in</a>
                     {% else %}

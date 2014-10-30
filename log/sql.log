@@ -729,3 +729,54 @@
 [Thu, 30 Oct 14 23:34:02 +0800][INFO] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='user'
 [Thu, 30 Oct 14 23:34:02 +0800][INFO] DESCRIBE `user`
 [Thu, 30 Oct 14 23:34:02 +0800][INFO] SELECT `user`.`id`, `user`.`username`, `user`.`password` FROM `user` WHERE `user`.`username` = :username AND `user`.`password` = :password LIMIT 1
+[Thu, 30 Oct 14 16:27:17 +0100][INFO] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='user'
+[Thu, 30 Oct 14 16:27:17 +0100][INFO] DESCRIBE `user`
+[Thu, 30 Oct 14 16:27:18 +0100][INFO] SELECT `user`.`id`, `user`.`username`, `user`.`password` FROM `user` WHERE `user`.`username` = :username AND `user`.`password` = :password LIMIT :3
+[Thu, 30 Oct 14 16:27:27 +0100][INFO] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='user'
+[Thu, 30 Oct 14 16:27:27 +0100][INFO] DESCRIBE `user`
+[Thu, 30 Oct 14 16:27:27 +0100][INFO] SELECT `user`.`id`, `user`.`username`, `user`.`password` FROM `user` WHERE `user`.`username` = :username AND `user`.`password` = :password LIMIT :3
+[Thu, 30 Oct 14 16:35:55 +0100][INFO] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='user'
+[Thu, 30 Oct 14 16:35:55 +0100][INFO] DESCRIBE `user`
+[Thu, 30 Oct 14 16:35:55 +0100][INFO] SELECT `user`.`id`, `user`.`username`, `user`.`password` FROM `user` WHERE `user`.`username` = :username AND `user`.`password` = :password LIMIT :3
+[Thu, 30 Oct 14 16:37:56 +0100][INFO] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='user'
+[Thu, 30 Oct 14 16:37:56 +0100][INFO] DESCRIBE `user`
+[Thu, 30 Oct 14 16:37:56 +0100][INFO] SELECT `user`.`id`, `user`.`username`, `user`.`password` FROM `user` WHERE `user`.`username` = :username AND `user`.`password` = :password LIMIT :3
+[Thu, 30 Oct 14 16:38:35 +0100][INFO] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='user'
+[Thu, 30 Oct 14 16:38:35 +0100][INFO] DESCRIBE `user`
+[Thu, 30 Oct 14 16:38:35 +0100][INFO] SELECT `user`.`id`, `user`.`username`, `user`.`password` FROM `user` WHERE `user`.`username` = :username AND `user`.`password` = :password LIMIT :3
+[Thu, 30 Oct 14 16:40:16 +0100][INFO] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='user'
+[Thu, 30 Oct 14 16:40:16 +0100][INFO] DESCRIBE `user`
+[Thu, 30 Oct 14 16:40:16 +0100][INFO] SELECT `user`.`id`, `user`.`username`, `user`.`password` FROM `user` WHERE `user`.`username` = :username AND `user`.`password` = :password LIMIT :3
+[Thu, 30 Oct 14 16:41:32 +0100][INFO] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='user'
+[Thu, 30 Oct 14 16:41:32 +0100][INFO] DESCRIBE `user`
+[Thu, 30 Oct 14 16:41:32 +0100][INFO] SELECT `user`.`id`, `user`.`username`, `user`.`password` FROM `user` WHERE `user`.`username` = :username AND `user`.`password` = :password LIMIT :3
+[Thu, 30 Oct 14 16:44:03 +0100][INFO] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='user'
+[Thu, 30 Oct 14 16:44:03 +0100][INFO] DESCRIBE `user`
+[Thu, 30 Oct 14 16:44:03 +0100][INFO] SELECT `user`.`id`, `user`.`username`, `user`.`password` FROM `user` WHERE `user`.`username` = :username AND `user`.`password` = :password LIMIT :3
+[Thu, 30 Oct 14 16:44:03 +0100][INFO] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='customer'
+[Thu, 30 Oct 14 16:44:03 +0100][INFO] DESCRIBE `customer`
+[Thu, 30 Oct 14 16:44:04 +0100][INFO] SELECT `customer`.`id`, `customer`.`wxname`, `customer`.`wxid`, `customer`.`name`, `customer`.`tel1`, `customer`.`tel2`, `customer`.`addr1`, `customer`.`addr2`, `customer`.`level`, `customer`.`child`, `customer`.`sex`, `customer`.`birth`, `customer`.`detail` FROM `customer`
+[Thu, 30 Oct 14 16:45:34 +0100][INFO] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='customer'
+[Thu, 30 Oct 14 16:45:34 +0100][INFO] DESCRIBE `customer`
+[Thu, 30 Oct 14 16:45:34 +0100][INFO] SELECT `customer`.`id`, `customer`.`wxname`, `customer`.`wxid`, `customer`.`name`, `customer`.`tel1`, `customer`.`tel2`, `customer`.`addr1`, `customer`.`addr2`, `customer`.`level`, `customer`.`child`, `customer`.`sex`, `customer`.`birth`, `customer`.`detail` FROM `customer`
+[Thu, 30 Oct 14 16:45:50 +0100][INFO] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='customer'
+[Thu, 30 Oct 14 16:45:50 +0100][INFO] DESCRIBE `customer`
+[Thu, 30 Oct 14 16:45:50 +0100][INFO] SELECT `customer`.`id`, `customer`.`wxname`, `customer`.`wxid`, `customer`.`name`, `customer`.`tel1`, `customer`.`tel2`, `customer`.`addr1`, `customer`.`addr2`, `customer`.`level`, `customer`.`child`, `customer`.`sex`, `customer`.`birth`, `customer`.`detail` FROM `customer` WHERE `customer`.`id` = 3 LIMIT :1
+[Thu, 30 Oct 14 16:46:01 +0100][INFO] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='customer'
+[Thu, 30 Oct 14 16:46:01 +0100][INFO] DESCRIBE `customer`
+[Thu, 30 Oct 14 16:46:01 +0100][INFO] SELECT `customer`.`id`, `customer`.`wxname`, `customer`.`wxid`, `customer`.`name`, `customer`.`tel1`, `customer`.`tel2`, `customer`.`addr1`, `customer`.`addr2`, `customer`.`level`, `customer`.`child`, `customer`.`sex`, `customer`.`birth`, `customer`.`detail` FROM `customer`
+[Thu, 30 Oct 14 16:46:08 +0100][INFO] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='customer'
+[Thu, 30 Oct 14 16:46:08 +0100][INFO] DESCRIBE `customer`
+[Thu, 30 Oct 14 16:46:08 +0100][INFO] SELECT `customer`.`id`, `customer`.`wxname`, `customer`.`wxid`, `customer`.`name`, `customer`.`tel1`, `customer`.`tel2`, `customer`.`addr1`, `customer`.`addr2`, `customer`.`level`, `customer`.`child`, `customer`.`sex`, `customer`.`birth`, `customer`.`detail` FROM `customer`
+[Thu, 30 Oct 14 16:46:21 +0100][INFO] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='customer'
+[Thu, 30 Oct 14 16:46:21 +0100][INFO] DESCRIBE `customer`
+[Thu, 30 Oct 14 16:46:21 +0100][INFO] SELECT `customer`.`id`, `customer`.`wxname`, `customer`.`wxid`, `customer`.`name`, `customer`.`tel1`, `customer`.`tel2`, `customer`.`addr1`, `customer`.`addr2`, `customer`.`level`, `customer`.`child`, `customer`.`sex`, `customer`.`birth`, `customer`.`detail` FROM `customer`
+[Thu, 30 Oct 14 16:48:05 +0100][INFO] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='customer'
+[Thu, 30 Oct 14 16:48:05 +0100][INFO] DESCRIBE `customer`
+[Thu, 30 Oct 14 16:48:05 +0100][INFO] SELECT `customer`.`id`, `customer`.`wxname`, `customer`.`wxid`, `customer`.`name`, `customer`.`tel1`, `customer`.`tel2`, `customer`.`addr1`, `customer`.`addr2`, `customer`.`level`, `customer`.`child`, `customer`.`sex`, `customer`.`birth`, `customer`.`detail` FROM `customer`
+[Thu, 30 Oct 14 16:48:10 +0100][INFO] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='customer'
+[Thu, 30 Oct 14 16:48:10 +0100][INFO] DESCRIBE `customer`
+[Thu, 30 Oct 14 16:48:10 +0100][INFO] SELECT `customer`.`id`, `customer`.`wxname`, `customer`.`wxid`, `customer`.`name`, `customer`.`tel1`, `customer`.`tel2`, `customer`.`addr1`, `customer`.`addr2`, `customer`.`level`, `customer`.`child`, `customer`.`sex`, `customer`.`birth`, `customer`.`detail` FROM `customer`
+[Thu, 30 Oct 14 16:48:14 +0100][INFO] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='customer'
+[Thu, 30 Oct 14 16:48:14 +0100][INFO] DESCRIBE `customer`
+[Thu, 30 Oct 14 16:48:14 +0100][INFO] SELECT `customer`.`id`, `customer`.`wxname`, `customer`.`wxid`, `customer`.`name`, `customer`.`tel1`, `customer`.`tel2`, `customer`.`addr1`, `customer`.`addr2`, `customer`.`level`, `customer`.`child`, `customer`.`sex`, `customer`.`birth`, `customer`.`detail` FROM `customer`

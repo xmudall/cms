@@ -37,7 +37,7 @@ try {
         });
 
         $connection = new \Phalcon\Db\Adapter\Pdo\Mysql(array(
-            "host" => "localhost",
+            "host" => "182.92.228.111",
             "username" => "udall",
             "password" => "123456",
             "dbname" => "cms",

@@ -12,6 +12,7 @@ class IndexController extends ApplicationController
         if ($this->request->isPost()) {
             $uname = $this->request->getPost('username');
             $psw = $this->request->getPost('password');
+            error_log($uname.$psw);
             $user = User::getDao()->login($uname, $psw);
             if ($user != false) {
                 // login success

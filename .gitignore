@@ -1,1 +1,2 @@
 app/views/**/*.php
+log/

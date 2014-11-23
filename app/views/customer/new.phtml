@@ -3,12 +3,12 @@
 {% block head %}
 {% endblock %}
 
-{% block title %}Customer | edit{% endblock %}
+{% block title %}Customer | new{% endblock %}
 
 {% block content %}
-<h1>Edit Customer</h1>
+<h1>New Customer</h1>
 <div class="simple-container">
-    <form action="customer/edit/{{obj.id}}" method="post" role="form">
+    <form action="customer/new" method="post" role="form">
         <div class="form-group">
             <label for="username">WX Name</label>
             <input class="form-control" placeholder="Please input Weixin Name" type="text" id="wxname" name="wxname" value="{{obj.wxname}}" size="32">

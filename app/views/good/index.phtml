@@ -2,34 +2,32 @@
 
 {# Codes in this section will be put between <head></head> tags. #}
 {% block head %}
-<script src="js/customer.js"></script>
+<script src="js/good.js"></script>
 {% endblock %}
 
 {# Part of title. Final title will be "CMS | {partOfTitle}" #}
-{% block title %}Customer | list{% endblock %}
+{% block title %}Good | list{% endblock %}
 
 {# The main content except head tabs. #}
 {% block content %}
-<h1>Customers List</h1>
+<h1>Good List</h1>
 <div class="form-group">
-    <a class="btn btn-default" href="customer/new">Add Customer</a>
+    <a class="btn btn-default" href="good/new">Add Good</a>
 </div>
 <table class="table table-bordered">
     <thead>
         <tr>
             <th>No</th>
-            <th>WX Name</th>
-            <th>WX Id</th>
             <th>Name</th>
-            <th>Tel.1</th>
-            <th>Tel.2</th>
-            <th>Addr.1</th>
-            <th>Addr.2</th>
-            <th>Level</th>
-            <th>Child</th>
-            <th>Sex</th>
-            <th>Birth</th>
-            <th>Detail</th>
+            <th>Unit</th>
+            <th>Net Weight</th>
+            <th>Avg. Purchase Price</th>
+            <th>Avg. Tax</th>
+            <th>Avg. Postage</th>
+            <th>Avg. Cost</th>
+            <th>Selling Price</th>
+            <th>Gross Profits</th>
+            <th>Type</th>
             <th>Actions</th>
         </tr>
     </thead>
@@ -37,18 +35,17 @@
         {% for item in items %}
         <tr id="{{item.id}}">
             <td>{{loop.index}}</td>
-            <td>{{item.wxname}}</td>
-            <td>{{item.wxid}}</td>
             <td>{{item.name}}</td>
-            <td>{{item.tel1}}</td>
-            <td>{{item.tel2}}</td>
-            <td>{{item.addr1}}</td>
-            <td>{{item.addr2}}</td>
-            <td>{{item.level}}</td>
-            <td>{{item.child}}</td>
-            <td>{{item.sex}}</td>
-            <td>{{item.birth}}</td>
-            <td>{{item.detail}}</td>
+            <td>{{item.unit}}</td>
+            <td>{{item.netweight}}</td>
+            <td>{{item.avginprice}}</td>
+            <td>{{item.avgtax}}</td>
+            <td>{{item.avgpostage}}</td>
+            {% set avgcost = (item.avginprice + item.avgtax + item.avgpostage) * rate %}
+            <td>{{avgcost}}</td>
+            <td>{{item.sellingprice}}</td>
+            <td>{{item.sellingprice - avgcost}}</td>
+            <td>{{item.type}}</td>
             <td>
                 <button type="button" class="btn btn-default action-delete"><span class="glyphicon glyphicon-trash"></span></button>
                 <button type="button" class="btn btn-default action-edit"><span class="glyphicon glyphicon-pencil"></span></button>

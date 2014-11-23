@@ -30,10 +30,12 @@ class CustomerController extends ApplicationController
         if ($customer != null) {
             if ( $this->request->isPost() ) {
                 error_log(json_encode($_POST));
-                // return $this->dispatcher->forward(array(
-                //     'controller' => 'customer',
-                //     'action' => 'index',
-                // ));
+                // $customer = new Customer();
+                $customer->save($_POST);
+                $this->dispatcher->forward(array(
+                    "controller" => "customer",
+                    "action" => "index",
+                ));
             } else {
                 $this->view->obj = $customer;
             }

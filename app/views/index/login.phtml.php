@@ -10,7 +10,6 @@
         <script src="lib/bootstrap/js/bootstrap.min.js"></script>
         <script src="js/base.js"></script>
         
-<link rel="stylesheet" href="css/login.css">
 
         <title>CMS | Login</title>
     </head>
@@ -48,11 +47,11 @@
     <form action="/cms/index/login" method="post" role="form">
       <div class="form-group">
         <label for="username">Username</label>
-        <input type="text" class="form-control" id="username" size="32" placeholder="Enter username">
+        <input type="text" class="form-control" id="username" name="username" size="32" placeholder="Enter username">
       </div>
       <div class="form-group">
         <label for="password">Password</label>
-        <input type="password" class="form-control" size="32" id="password" placeholder="Password">
+        <input type="password" class="form-control" id="password" name="password" size="32" placeholder="Password">
       </div>
       <button type="submit" class="btn btn-default">Submit</button>
     </form>

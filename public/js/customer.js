@@ -1,5 +1,5 @@
 $(function() {
-    $('#delete').on('click', function(e) {
+    $('.action-delete').on('click', function(e) {
         var id = $(e.delegateTarget).parents('tr').attr('id');
         console.log('delete ' + id);
         ajaxGet('customer/delete/' + id, function(data, textStatus) {
@@ -11,7 +11,7 @@ $(function() {
             }
         });
     });
-    $('#edit').on('click', function(e) {
+    $('.action-edit').on('click', function(e) {
         var id = $(e.delegateTarget).parents('tr').attr('id');
         console.log('edit ' + id);
         location = 'customer/edit/' + id;

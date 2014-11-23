@@ -8,30 +8,59 @@
 
 {% block content %}
 <h1>Edit Customer</h1>
-{% set postUrl = 'customer/edit/' + obj.id %}
-{{ form(postUrl, 'method': 'post') }}
-<div class="row">
-    <div class="col label">
-        <label for="username">Username</label>
-    </div>
-    <div class="col input">
-        {{ text_field("username", "size":32) }}
-    </div>
+<div class="simple-container">
+    <form action="customer/edit/{{obj.id}}" method="post" role="form">
+        <div class="form-group">
+            <label for="username">WX Name</label>
+            <input class="form-control" placeholder="Please input Weixin Name" type="text" id="wxname" name="wxname" value="{{obj.wxname}}" size="32">
+        </div>
+        <div class="form-group">
+            <label for="username">WX Id</label>
+            <input class="form-control" placeholder="Please input Weixin ID" type="text" id="wxid" name="wxid" value="{{obj.wxid}}" size="32">
+        </div>
+        <div class="form-group">
+            <label for="username">Name</label>
+            <input class="form-control" placeholder="Please input Name" type="text" id="name" name="name" value="{{obj.name}}" size="32">
+        </div>
+        <div class="form-group">
+            <label for="username">Tel 1</label>
+            <input class="form-control" placeholder="Please input Telephone Number" type="text" id="tel1" name="tel1" value="{{obj.tel1}}" size="32">
+        </div>
+        <div class="form-group">
+            <label for="username">Tel 2</label>
+            <input class="form-control" placeholder="Please input Telephone Number" type="text" id="tel2" name="tel2" value="{{obj.tel2}}" size="32">
+        </div>
+        <div class="form-group">
+            <label for="username">Address 1</label>
+            <input class="form-control" placeholder="Please input Address" type="text" id="addr1" name="addr1" value="{{obj.addr1}}" size="32">
+        </div>
+        <div class="form-group">
+            <label for="username">Address 2</label>
+            <input class="form-control" placeholder="Please input Address" type="text" id="addr2" name="addr2" value="{{obj.addr2}}" size="32">
+        </div>
+        <div class="form-group">
+            <label for="username">Level</label>
+            <input class="form-control" placeholder="Please input Level" type="text" id="level" name="level" value="{{obj.level}}" size="32">
+        </div>
+        <div class="form-group">
+            <label for="username">Child</label>
+            <input class="form-control" placeholder="Please input Name of Child" type="text" id="child" name="child" value="{{obj.child}}" size="32">
+        </div>
+        <div class="form-group">
+            <label for="username">Sex</label>
+            <input class="form-control" placeholder="Please input Sex" type="text" id="sex" name="sex" value="{{obj.sex}}" size="32">
+        </div>
+        <div class="form-group">
+            <label for="username">Birth</label>
+            <input class="form-control" placeholder="Please input Birthday" type="text" id="birth" name="birth" value="{{obj.birth}}" size="32">
+        </div>
+        <div class="form-group">
+            <label for="username">Detail</label>
+            <input class="form-control" placeholder="Please input More detail information" type="text" id="detail" name="detail" value="{{obj.detail}}" size="32">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+    </form>
 </div>
-<div class="row">
-    <div class="col label">
-        <label for="password">Password</label>
-    </div>
-    <div class="col input">
-        {{ password_field("password", "size":32) }}
-    </div>
-</div>
-<div class="row">
-    <div class="col submit align-right">
-    {{ submit_button('Login') }}
-    </div>
-</div>
-</form>
 {% endblock %}
 
 {% block script %}

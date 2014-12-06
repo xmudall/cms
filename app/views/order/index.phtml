@@ -1,0 +1,62 @@
+{% extends "skeleton.phtml" %}
+
+{# Codes in this section will be put between <head></head> tags. #}
+{% block head %}
+<script src="js/order.js"></script>
+{% endblock %}
+
+{# Part of title. Final title will be "CMS | {partOfTitle}" #}
+{% block title %}Order | list{% endblock %}
+
+{# The main content except head tabs. #}
+{% block content %}
+<h1>Order List</h1>
+<div class="form-group">
+    <a class="btn btn-default" href="order/new">Add Order</a>
+</div>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>No</th>
+            <th>Customer</th>
+            <th>Total Price</th>
+            <th>Status</th>
+            <th>Create Time</th>
+            <th>Receiver</th>
+            <th>Express</th>
+            <th>Postage</th>
+            <th>Express No.</th>
+            <th>Postage Payer</th>
+            <th>Received Time</th>
+            <th>Detail</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    </tbody>
+        {% for item in items %}
+        <tr id="{{item.id}}">
+            <td>{{loop.index}}</td>
+            <td>{{item.customerid}}</td>
+            <td>{{item.price}}</td>
+            <td>{{item.status}}</td>
+            <td>{{item.date}}</td>
+            <td>{{item.receiver}}</td>
+            <td>{{item.express}}</td>
+            <td>{{item.postage}}</td>
+            <td>{{item.expressnumber}}</td>
+            <td>{{item.postagepayer}}</td>
+            <td>{{item.receivetime}}</td>
+            <td>{{item.detail}}</td>
+            <td>
+                <button type="button" class="btn btn-default action-delete"><span class="glyphicon glyphicon-trash"></span></button>
+                <button type="button" class="btn btn-default action-edit"><span class="glyphicon glyphicon-pencil"></span></button>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
+
+{# Codes in tdis section will be put after body content. #}
+{% block script %}
+{% endblock %}
